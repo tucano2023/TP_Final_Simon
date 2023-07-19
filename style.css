@@ -1,0 +1,141 @@
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: #148d46;
+  }
+
+  .tablero {
+    background-color: #2e2c2c;
+    height: 37.5em;
+    width: 37.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 20em;
+  }
+
+  .simon {
+    height: 31.25em;
+    width: 31.25em;
+    background-color: #101010;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .porcion-color {
+    height: 13.12em;
+    width: 13.12em;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .verde {
+    background-color: #027802;
+    border-radius: 13em 0 0 0;
+    top: 1.87em;
+    left: 1.87em;
+  }
+
+  .rojo {
+    background-color: #950303;
+    border-radius: 0 13em 0 0;
+    top: 1.87em;
+    right: 1.87em;
+  }
+
+  .azul {
+    background-color: #01018a;
+    bottom: 1.87em;
+    right: 1.87em;
+    border-radius: 0 0 13em 0;
+  }
+
+  .amarillo {
+    background-color: #919102;
+    bottom: 1.87em;
+    left: 1.87em;
+    border-radius: 0 0 0 13em;
+  }
+
+  .simon:before {
+    position: absolute;
+    content: "";
+    background-color: #101010;
+    height: 13.75em;
+    width: 13.75em;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+  }
+
+  #conteo {
+    background-color: #90c8a0;
+    font-size: 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 2em;
+    width: 3em;
+    display: grid;
+    place-items: center;
+    border-radius: 0.9em;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .contenedor {
+    background-color: #148d46;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor button {
+    background-color: #ffffff;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    padding: 1em 2em;
+    border-radius: 0.9em;
+    cursor: pointer;
+  }
+
+  .contenedor p {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 1em;
+  }
+
+  .contenedor span {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 10px;
+    }
+    .tablero {
+      height: 35em;
+      width: 35em;
+    }
+  }
